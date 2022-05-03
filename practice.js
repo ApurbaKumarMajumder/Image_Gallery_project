@@ -54,3 +54,11 @@ function square_root(n) {
 }
 
 console.log(square_root(10));
+// sqrt_n(10);
+
+// Function Hoisting
+var sqrt_n = function () {
+    console.log("In the second root function ");
+}
+// Functions are put on top by the compiler and we can call any function any time from the code but for this types of function Hoisting does not work(compiler do not moves it to the top)
+sqrt_n(10);
