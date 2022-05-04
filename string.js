@@ -50,3 +50,43 @@ for (let val of arr2){
 for (let index in arr2){
     console.log(index);
 }
+
+// Arrays - Add/Remove items
+let fruits = ["Apple", "Mango"]
+
+// push & pop - add or remove elements from last
+fruits.push("melon", 'kiwi');
+console.log(fruits);
+
+fruits.pop();
+fruits.log(fruits);
+
+// unshift & shift- add or remove elements from front
+fruits.shift();
+console.log(fruits);
+
+fruits.unshift("kiwi", 'grapes');
+console.log(fruits);
+
+// Arrays - Data Changing
+let notes = ['do', 're', 'mi', 'fa', 'so', 'la', 'ti', 'do'];
+
+/*
+// slice - original array is not affected my this operation
+console.log(notes.slice(4));
+// notes = notes.slice(4); to reassign notes
+console.log(notes);
+
+// Splice - this changes the original array
+let omit = notes.splice(4, 2);
+console.log(omit);
+console.log(notes);
+
+// Splice - replace items with splice
+notes.splice(0, 3, 'sa', 're', 'ga'); // first 3 items are replaced
+console.log(notes);
+*/
+
+// concat - add elements to the end & do not alter the original array
+console.log(notes.concat(['sa', 'ra', 'ga']));
+console.log(notes);
