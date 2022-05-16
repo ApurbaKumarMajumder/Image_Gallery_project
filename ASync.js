@@ -38,3 +38,35 @@ Challenge Time:
 5: Rename the file name to mybio.txt
 6: now delete both the file and the folder
 */
+
+
+// solution for the challange
+fs.mkdir('thapa', (err) => {
+    console.log("Directory is completed");
+});
+
+fs.writeFile('thapa\\bio.txt', "my name is Apurba Kumar Majumder ", (err) => {
+    console.log("Write function sucessfull");
+});
+
+fs.appendFile("thapa\\bio.txt", "please like and share my video with your friends :) ", (err) => {
+   console.log("files data appended successfully");
+});
+
+fs.readFile("thapa\\bio.txt", 'utf-8', (err, data) => {
+    console.log(data);
+    console.log("data is printed successfully.");
+});
+
+fs.rename("thapa\\bio.txt", "thapa\\myBio.txt", (err) => {
+    console.log("rename done for now");
+});
+
+fs.unlink("thapa\\myBio.txt", (err) => {
+    console.log("selected file is deleted");
+});
+
+// remove thapa folder too
+fs.rmdir('.\\thapa', (err) => {
+    console.log("selected directory is deleted");
+});
