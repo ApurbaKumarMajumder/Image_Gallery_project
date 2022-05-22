@@ -29,5 +29,12 @@ fs.mkdirSync("newFolder");
 // delete
 // fs.rmdirSync("toberemoved");
 // files and folder -> get
-let content2 = fs.readdirSync("C:\\Users\\9851a\\Documents\\Programming\\javascript\\L2_Objects_arrays");
-console.log(content2);
+// let content2 = fs.readdirSync("C:\\Users\\9851a\\Documents\\Programming\\javascript\\L2_Objects_arrays");
+// console.log(content2);
+
+// lstatsync -> path pass -> isFile, isDirectory
+// i.e. lstatsync function helps to determine whether the given address has a file or a folder
+let randomPath = "C:\\Users\\anubh\\OneDrive\\Documents\\Programming\\Web-Development\\Web-Development-master\\javascript";
+let isFile = fs.lstatSync(randomPath).isFile();
+let isDirectory = fs.lstatSync(randomPath).isDirectory();
+console.log("path belongs to file: ", isFile, " folder: ", isDirectory);
