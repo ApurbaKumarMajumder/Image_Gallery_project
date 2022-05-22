@@ -17,3 +17,16 @@ In 1995 Netscape written a program called Netscape Enterprise Server which allow
 * Basics of JavaScript (Advanced JS will be bonus)
 * ES5 & ES6 | ECMAScript 6
 * Client Server Model(optional)
+
+## Node JS REPL
+The REPL feature of Node is very useful in experimenting with Node.js codes and to debug JavaScript codes.
+
+* Read - Reads user's input, parses the input into JavaScript data-structure, and stores in memory.
+* Eval - Takes and evaluates the data structure.
+* Print - Prints the results.
+* Loop - Loops the above command until the user presses ctrl-c twice.
+
+## Node.JS Core Modules
+Consider modules to be the same as JavaScript libraries. A set of functions you want to include in your application.
+
+Node.js has a set of built-in modules which you can use without any further installation.
