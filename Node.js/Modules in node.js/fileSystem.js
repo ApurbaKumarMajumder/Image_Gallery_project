@@ -38,3 +38,12 @@ let randomPath = "C:\\Users\\anubh\\OneDrive\\Documents\\Programming\\Web-Develo
 let isFile = fs.lstatSync(randomPath).isFile();
 let isDirectory = fs.lstatSync(randomPath).isDirectory();
 console.log("path belongs to file: ", isFile, " folder: ", isDirectory);
+
+// copyfilesync practical
+let scrFilePath = "C:\\Users\\anubh\\OneDrive\\Documents\\Programming\\Web-Development\\Web-Development-master\\Node.js\\Import and Export Files\\index.js";
+let destinationFilePath = "C:\\Users\\anubh\\OneDrive\\Documents\\Programming\\Web-Development\\Web-Development-master\\javascript\\copiedFile.js";
+
+// destination file can have same name as the source file or may have a differnt name.
+
+fs.copyFileSync(scrFilePath, destinationFilePath);
+console.log("file content from src copied to destination.");
