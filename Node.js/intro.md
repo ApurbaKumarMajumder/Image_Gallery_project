@@ -7,3 +7,13 @@ In 2009 an idea came in the mind of Ryan Dahl (Google Engineer) that why not run
 
 ## JS-Server Fun Fact
 In 1995 Netscape written a program called Netscape Enterprise Server which allowed Developer to run JavaScript at server side.
+
+## When to use Node JS?
+* I/O bound
+* Data streaming Application -> Never ending scrolling (ex. Netflix, Facebook)
+* Real time chat Application (ex. Whatsapp)
+
+## Node JS Prerequisites
+* Basics of JavaScript (Advanced JS will be bonus)
+* ES5 & ES6 | ECMAScript 6
+* Client Server Model(optional)
