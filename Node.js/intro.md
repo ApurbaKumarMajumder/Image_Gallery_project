@@ -42,3 +42,12 @@ Node.js has a set of built-in modules which you can use without any further inst
 
 Note: for the copyfilesync new file is first created in the destination folder and then the content is copied from the source file.  (not same as normal copy)
 * over write content -> writefilesync("address of the file", "content")
+
+## Folder:
+* CREATE -> mkdirsync() 
+* DELETE -> rmdirsync()
+* READ -> readdirsync()
+
+## Extra Functions:
+* existsync() -> whether a file or folder exists on the position or not.
+* lstatsync() -> to check is the given path stores a file or a folder.
