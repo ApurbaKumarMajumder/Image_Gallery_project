@@ -51,3 +51,10 @@ Note: for the copyfilesync new file is first created in the destination folder a
 ## Extra Functions:
 * existsync() -> whether a file or folder exists on the position or not.
 * lstatsync() -> to check is the given path stores a file or a folder.
+
+## Path Function
+* process.cwd() -> dirname -> path of the folder of current js file
+* filename -> path of the current working js file
+* path.join 
+* path.extname
+* path.basename
