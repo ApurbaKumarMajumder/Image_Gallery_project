@@ -30,3 +30,15 @@ The REPL feature of Node is very useful in experimenting with Node.js codes and 
 Consider modules to be the same as JavaScript libraries. A set of functions you want to include in your application.
 
 Node.js has a set of built-in modules which you can use without any further installation.
+
+                         Special Functions for File System
+
+## File:
+* CREATE -> writefilesync("address of the file", "content for the file")
+* READ -> readfilesync("address of the file")
+* APPEND -> appendfilesync("address of the file", "content")
+* DELETE -> deletefilesync("address of the file")
+* COPY FILE -> copyfilesync("source file", "destination file")
+
+Note: for the copyfilesync new file is first created in the destination folder and then the content is copied from the source file.  (not same as normal copy)
+* over write content -> writefilesync("address of the file", "content")
