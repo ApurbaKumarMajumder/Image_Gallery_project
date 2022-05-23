@@ -1,3 +1,4 @@
+// e.c. -> execution context
 // how js code is executed
 // two variables are already defined in node.js
 // these are this & global
@@ -8,12 +9,12 @@ console.log("this", this);
 console.log("code hello");
 // the code isn't inside any function -> is in global area
 // for that global execution context created -> default 
-*/
+
 console.log("a", a);
 var a;
 a = 10;
 console.log("a", a);
-/*
+
 // which fn function out of these three will be called?
 fn();
 function fn(){
@@ -27,7 +28,6 @@ function fn(){
 }
 fn();
 // only the latest defiend function will be called
-*/
 
 console.log("1. ", a);
 var a = 10;
@@ -40,3 +40,16 @@ function fn(){
 console.log("4. ", a);
 fn();
 console.log("5. ", a);
+*/
+
+// var variable -> reassign it, redeclare it
+// reassignment
+
+var a = 10;
+a = 20;
+console.log("1. ", a)
+// redeclare it
+var a = 30;
+console.log("2. ", a);
+
+// for var variable -> memory allocation is only done once per ec or when a function is called, var is function scope.
