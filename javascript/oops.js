@@ -81,5 +81,3 @@ let kiwi2 = new FruitClass2("sour", "green");
 console.log(apple);
 console.log(kiwi);
 console.log(kiwi2);
-
-dhisdhfvbbvuierbv
